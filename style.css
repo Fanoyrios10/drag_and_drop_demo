@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+}
+.imgcontainer {
+    width: 206px;
+    height: 225px;
+    border: solid 5px black;
+    margin-right: 10px;
+    display: inline-block;
+}

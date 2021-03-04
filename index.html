@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <img
+                src="microsoftLogo.png"
+                alt="microsoftLogo"
+                width="200"
+                height="200"
+                id="microsoft"
+                ondragstart="drag(event)"
+            />
+            <img
+                src="googleLogo.jpg"
+                alt="googleLogo"
+                width="200"
+                height="200"
+                id="google"
+                ondragstart="drag(event)"
+            />
+            <img
+                src="Apple-logo.png"
+                alt="Apple"
+                width="200"
+                height="200"
+                draggable="true"
+                id="apple"
+                ondragstart="drag(event)"
+            />
+            <img
+                src="Nokia-Logo.png"
+                alt="Nokia-Logo"
+                width="200"
+                height="200"
+                id="nokia"
+                ondragstart="drag(event)"
+            />
+        </div>
+        <div class="container">
+            <div
+                id="microsoft-rect"
+                class="imgcontainer"
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"
+            >
+                microsoft
+            </div>
+            <div
+                id="google-rect"
+                class="imgcontainer"
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"
+            >
+                google
+            </div>
+            <div
+                id="apple-rect"
+                class="imgcontainer"
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"
+            >
+                apple
+            </div>
+            <div
+                id="nokia-rect"
+                class="imgcontainer"
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"
+            >
+                nokia
+            </div>
+        </div>
+    </body>
+</html>
