@@ -9,9 +9,9 @@ function drag(ev) {
 function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData('text');
-    if (data == ev.target.innerText) {
+    if (data + '-rect'== ev.target.id) {
         ev.target.appendChild(document.getElementById(data));
     } else {
-        alert('Wrong match!!!');
+        alert('Λάθος αντίστοιχα!!!');
     }
 }
